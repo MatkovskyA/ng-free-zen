@@ -281,6 +281,44 @@
       </a>
     </div>
   </footer>
+  <!-- Модальное окно -->
+  <div class="modal" id="modal">
+    <div class="modal__body">
+      <!-- Закрытие модального окна -->
+      <button class="modal__close" type="button" id="close">
+        <img src="./assets/icons/close.svg" alt="Close" />
+      </button>
+      <!-- Заголовок -->
+      <h3 class="modal__title">Order a consultation</h3>
+      <!-- Форма -->
+      <form class="form" id="order">
+        <label class="form__input">
+          <span>Name</span>
+          <input type="text" id="name">
+        </label>
+        <label class="form__input">
+          <span>Tel</span>
+          <input type="tel" id="tel">
+        </label>
+        <label class="form__input">
+          <span>E-mail</span>
+          <input type="email" id="email">
+        </label>
+        <label class="form__input">
+          <span>Connection</span>
+          <select id="connection">
+            <option value="telegram">Telegram</option>
+            <option value="whatsapp">WhatsApp</option>
+          </select>
+        </label>
+        <label class="form__checkbox" for="policy">
+          <input type="checkbox" id="policy">
+          <a href="#!" target="_blank">Privacy policy</a>
+        </label>
+        <button class="form__submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
