@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  border: none;
-  background: none;
+  box-sizing: border-box;
 }
 
 h1,
@@ -28,8 +27,21 @@ ul {
   list-style: none;
 }
 
-input {
-  appearance: none;
+button {
+  background: none;
+  border: none;
+  padding: 0;
 }
 
+input {
+  appearance: none;
+  background: none;
+  border: none;
+}
+
+select {
+  appearance: none;
+  border: none;
+  background: none;
+}
 
