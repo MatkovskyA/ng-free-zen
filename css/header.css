@@ -1,9 +1,15 @@
 .header {
-  padding: 10px 15px;
-  border-bottom: 1px solid #AAAAAA;
+  border-bottom: 1px solid #AAA;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header__wrapper {
+  height: 50px;
+  padding: 0 15px;
+  background-color: #FFF;
   display: flex;
   align-items: center;
 }
@@ -42,7 +48,6 @@
 
 .header__lang img {
   position: absolute;
-  z-index: -1;
   top: 50%;
   right: 8px;
   transform: translateY(-50%);
