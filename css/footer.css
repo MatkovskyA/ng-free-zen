@@ -15,8 +15,23 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* .footer__info {}
+/* .footer__info {} */
 
-.footer__logo {}
+.footer__logo img{
+  width: 216px;
+  margin-bottom: 10px;
+}
 
-.footer__copy {} */
+.footer__copy {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.footer__dev  {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__dev img {
+  width: 130px;
+}
