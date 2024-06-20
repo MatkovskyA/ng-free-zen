@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form__input {
+  padding: 5px;
+  border-bottom: 1px solid #AAAAAA;
+}
+
+.form__input input::placeholder {
+  color: #AAAAAA;
+}
+
+.form__input input:focus {
+  outline: none;
+}
+
+.form__input input {
+  display: block;
+}
+
+.form__select {
+
+}
+
+.form__checkbox {
+
+}
+
+.form__submit {
+  padding: 12px 0;
+  width: 100%;
+  border: 1px solid #222;
+  border-radius: 30px;
+  margin-top: 5px;
+}
