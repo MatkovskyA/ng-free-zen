@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/clients.css" />
   <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/form.css" />
   <title>ZEN</title>
 </head>
 <body>
@@ -311,26 +312,22 @@
       <!-- Форма -->
       <form class="form" id="order">
         <label class="form__input">
-          <span>Name</span>
-          <input type="text" id="name">
+          <input type="text" id="name" placeholder="Name" />
         </label>
         <label class="form__input">
-          <span>Tel</span>
-          <input type="tel" id="tel">
+          <input type="tel" id="tel" placeholder="Tel." />
         </label>
         <label class="form__input">
-          <span>E-mail</span>
-          <input type="email" id="email">
+          <input type="email" id="email" placeholder="E-mail" />
         </label>
-        <label class="form__input">
-          <span>Connection</span>
+        <label class="form__select">
           <select id="connection">
             <option value="telegram">Telegram</option>
             <option value="whatsapp">WhatsApp</option>
           </select>
         </label>
         <label class="form__checkbox" for="policy">
-          <input type="checkbox" id="policy">
+          <input type="checkbox" id="policy" />
           <a href="#!" target="_blank">Privacy policy</a>
         </label>
         <button class="form__submit" type="submit">Submit</button>
