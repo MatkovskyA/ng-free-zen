@@ -1,31 +1,16 @@
-// <link rel="stylesheet" href="css/reset.css" />
-// <link rel="stylesheet" href="css/fonts.css" />
-// <link rel="stylesheet" href="css/global.css" />
-// <link rel="stylesheet" href="css/header.css" />
-// <link rel="stylesheet" href="css/burger.css" />
-// <link rel="stylesheet" href="css/menu.css" />
-// <link rel="stylesheet" href="css/download.css" />
-// <link rel="stylesheet" href="css/columns.css" />
-// <link rel="stylesheet" href="css/cashback.css" />
-// <link rel="stylesheet" href="css/warranty.css" />
-// <link rel="stylesheet" href="css/care.css" />
-// <link rel="stylesheet" href="css/clients.css" />
-// <link rel="stylesheet" href="css/footer.css" />
-// <link rel="stylesheet" href="css/modal.css" />
-// <link rel="stylesheet" href="css/form.css" />
-
-@import "./reset";
-@import "./fonts";
-@import "./global";
-@import "./header";
-@import "./burger";
-@import "./menu";
-@import "./download";
-@import "./columns";
-@import "./cashback";
-@import "./warranty";
-@import "./care";
-@import "./clients";
-@import "./footer";
-@import "./modal";
-@import "./form";
+@import "./config/reset";
+@import "./mixin/mixins";
+@import "./config/fonts";
+@import "./config/global";
+@import "widgets/header";
+@import "ui/burger";
+@import "ui/menu";
+@import "widgets/download";
+@import "ui/columns";
+@import "widgets/cashback";
+@import "widgets/warranty";
+@import "widgets/care";
+@import "widgets/clients";
+@import "widgets/footer";
+@import "ui/modal";
+@import "ui/form";

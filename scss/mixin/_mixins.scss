@@ -1,0 +1,15 @@
+@mixin font_face(
+  $family, 
+  $path, 
+  $weight, 
+) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$path}.woff2') format('woff2');
+    src: url('#{$path}.woff') format('woff');
+    src: url('#{$path}.ttf') format('truetype');
+    font-weight: $weight;
+    font-style: normal;
+    font-display: swap;
+  }
+}
