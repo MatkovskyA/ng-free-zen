@@ -1,42 +1,38 @@
-.warranty {
+.care {
   padding: 30px 15px;
 }
 
-.warranty__wrapper {
+.care__wrapper {
   display: flex;
   gap: 30px;
   flex-direction: column;
 }
 
-/* .warranty__text-block {
-
-} */
-
-.warranty__title {
+.care__title {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.warranty__copy {
+.care__copy {
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 10px;
 }
 
-.warranty__copy:last-of-type {
+.care__copy:last-of-type {
   margin-bottom: 0;
 }
 
-.warranty__image-block {
+.care__image-block {
   border: 1px solid #AAA;
   border-radius: 20px;
   height: 72vw;
   overflow: hidden;
-  padding: 7px 30px 9px 50px;
+  padding: 13px 15px;
 }
 
-.warranty__image-block img {
+.care__image-block img {
   display: block;
   height: 100%;
   object-fit: contain;
