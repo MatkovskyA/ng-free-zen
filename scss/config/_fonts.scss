@@ -1,0 +1,13 @@
+/* fonts */
+
+@include font-face(
+  "Nunito",
+  "../assets/fonts/Nunito/Nunito-Regular",
+  400,
+);
+
+@include font-face(
+  "Nunito",
+  "../assets/fonts/Nunito/Nunito-Bold",
+  700,
+)
