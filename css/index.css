@@ -61,9 +61,28 @@ select:focus {
 
 .app.light {
   --color-primary: #000;
+  --border-color-secondary: #aaa;
+  --bg-color-primary: #fff;
 }
 .app.dark {
   --color-primary: #fff;
+  --bg-color-primary: #000;
+  --border-color-secondary: #fff;
+}
+
+.header.light {
+  --color-primary: #000;
+  --border-color-primary: #000;
+  --border-color-secondary: #aaa;
+  --bg-color-primary: #fff;
+  --icon-color-primary: #000;
+}
+.header.dark {
+  --color-primary: #fff;
+  --border-color-primary: #fff;
+  --border-color-secondary: #aaa;
+  --bg-color-primary: #000;
+  --icon-color-primary: #fff;
 }
 
 /* fonts */
@@ -90,8 +109,12 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+.app {
+  background-color: var(--bg-color-primary);
+}
+
 .header {
-  border-bottom: 1px solid #AAA;
+  border-bottom: 1px solid var(--border-color-secondary);
   position: fixed;
   top: 0;
   left: 0;
@@ -101,13 +124,15 @@ body {
 .header__wrapper {
   height: 50px;
   padding: 0 15px;
-  background-color: #FFF;
+  background-color: var(--bg-color-primary);
+  color: var(--);
   display: flex;
   align-items: center;
 }
 .header__logo {
   width: 77px;
   height: 30px;
+  color: var(--icon-color-primary);
 }
 .header__actions {
   display: flex;
@@ -120,7 +145,8 @@ body {
   height: 30px;
   position: relative;
   display: flex;
-  border: 1px solid black;
+  border: 1px solid var(--border-color-primary);
+  background-color: var(--bg-color-primary);
   border-radius: 4px;
   overflow: hidden;
 }
@@ -128,6 +154,7 @@ body {
   padding: 6px;
   height: 100%;
   width: 100%;
+  color: var(--color-primary);
 }
 .header__lang img {
   position: absolute;
@@ -136,10 +163,12 @@ body {
   transform: translateY(-50%);
   width: 9px;
   height: 6px;
+  fill: var(--color-primary);
 }
 .header__theme {
   width: 30px;
   height: 30px;
+  color: var(--icon-color-primary);
 }
 
 .burger {
@@ -151,7 +180,7 @@ body {
 .burger.active::before {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
-  transition: all 0.5 ease-in;
+  transition: all 0.5s;
 }
 
 .burger::before {
@@ -161,24 +190,27 @@ body {
   top: 0;
   width: 100%;
   height: 2px;
-  background: #000000;
+  background: var(--color-primary);
+  transition: all 0.5s;
 }
 
 .burger.active span {
-  display: none;
+  opacity: 0;
 }
 
 .burger span {
   width: 100%;
   display: block;
   height: 2px;
-  background: #000000;
+  background: var(--color-primary);
+  transition: all 0.5s;
+  opacity: 1;
 }
 
 .burger.active::after {
   bottom: 50%;
   transform: translateY(50%) rotate(-45deg);
-  transition: all 0.5 ease-in;
+  transition: all 0.5s;
 }
 
 .burger::after {
@@ -188,7 +220,8 @@ body {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: #000000;
+  background: var(--color-primary);
+  transition: transform 0.5s;
 }
 
 .menu {
@@ -227,6 +260,7 @@ body {
   margin-top: 20px;
   font-size: 14px;
   font-weight: 400;
+  color: var(--color-primary);
 }
 .download__links {
   margin-top: 20px;
@@ -242,7 +276,7 @@ body {
   border-radius: 5px;
 }
 .download__image-block {
-  border: 1px solid #AAA;
+  border: 1px solid var(--border-color-secondary);
   border-radius: 20px;
   height: 72vw;
   overflow: hidden;
@@ -441,7 +475,7 @@ body {
 }
 
 .modal.active {
-  position: fixed;
+  position: none;
   top: 0;
   right: 0;
   bottom: 0;
@@ -496,6 +530,7 @@ body {
   max-height: 0;
   overflow: hidden;
   position: absolute;
+  z-index: 5;
   left: 0;
   right: 0;
   top: 100%;

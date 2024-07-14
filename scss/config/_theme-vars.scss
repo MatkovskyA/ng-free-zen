@@ -1,9 +1,33 @@
 .app {
   &.light {
     --color-primary: #000;
+    --border-color-secondary: #aaa;
+    --bg-color-primary: #fff;
   }
-  
+
+
   &.dark {
     --color-primary: #fff;
+    --bg-color-primary: #000;
+    --border-color-secondary: #fff;
+  }
+}
+
+.header {
+  &.light {
+    --color-primary: #000;
+    --border-color-primary: #000;
+    --border-color-secondary: #aaa;
+    --bg-color-primary: #fff;
+    --icon-color-primary: #000;
+  }
+
+
+  &.dark {
+    --color-primary: #fff;
+    --border-color-primary: #fff;
+    --border-color-secondary: #aaa;
+    --bg-color-primary: #000;
+    --icon-color-primary: #fff;
   }
 }

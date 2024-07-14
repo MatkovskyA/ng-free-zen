@@ -31,7 +31,7 @@
   .select {
     padding: 3px;
     position: relative;
-    color: $text-color-gray;
+    color: $text-color-ternary;
 
     &__header {
       display: flex;
@@ -48,6 +48,7 @@
       max-height: 0;
       overflow: hidden;    
       position: absolute;
+      z-index: 5;
       left: 0;
       right: 0;
       top: 100%;

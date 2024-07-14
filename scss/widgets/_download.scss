@@ -6,19 +6,20 @@
     gap: 30px;
     flex-direction: column;
   }
-  
+
   &__title {
     font-size: 30px;
     font-weight: 700;
     color: var(--color-primary);
   }
-  
+
   &__copy {
     margin-top: 20px;
     font-size: 14px;
     font-weight: 400;
+    color: var(--color-primary);
   }
-  
+
   &__links {
     margin-top: 20px;
     width: fit-content;
@@ -26,20 +27,20 @@
     gap: 15px;
     flex-direction: column;
   }
-  
+
   &__link {
     width: 150px;
     height: 44px;
     border-radius: 5px;
   }
-  
+
   &__image-block {
-    border: 1px solid #AAA;
+    border: 1px solid var(--border-color-secondary);
     border-radius: 20px;
     height: 72vw;
     overflow: hidden;
   }
-  
+
   &__image-block img {
     display: block;
     height: 100%;
