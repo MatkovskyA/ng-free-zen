@@ -1,6 +1,22 @@
-$black-color: #000;
-$dark-gray-color: #222;
-$gray-color: #484848;
-$light-gray-color: #AAA;
-$white-color: #000;
-$blue-color: #00A1FF
+$color-primary: #000;
+
+// Border-color:
+$border-color-primary: #aaa;
+$border-color-secondary: #000;
+
+// Bg-color:
+$bg-primary: #fff;
+$bg-secondary: #000;
+$bg-footer: #484848;
+$bg-modal: rgba(0, 0, 0, 0.5);
+
+$blue-color: #00A1FF;
+
+// Text-color:
+$text-color-primary: #fff;
+$text-color-secondary: #000;
+$text-color-ternary: #aaa;
+
+$viewport-md: 768px;
+$viewport-lg: 1200px;
+$viewport-xl: 1400px;

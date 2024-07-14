@@ -2,26 +2,26 @@
   max-width: 460px;
   margin: 0 auto;
   padding: 30px 15px;
-}
 
-.cashback__title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
 
-.cashback__copy {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
+  &__copy {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 
-.cashback__copy:last-of-type {
-  margin-bottom: 20px;
-}
+  &__copy:last-of-type {
+    margin-bottom: 20px;
+  }
 
-.cashback__button {
-  width: 100%;
-  padding: 14px 0;
-  border: 1px solid #aaaaaa;
-  border-radius: 30px;
+  &__button {
+    width: 100%;
+    padding: 14px 0;
+    border: 1px solid #aaaaaa;
+    border-radius: 30px;
+  }
 }

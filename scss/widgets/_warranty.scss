@@ -1,39 +1,40 @@
 .warranty {
   padding: 30px 15px;
+
+  &__wrapper {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  &__copy {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  
+  &__copy:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  &__image-block {
+    border: 1px solid #AAA;
+    border-radius: 20px;
+    height: 72vw;
+    overflow: hidden;
+    padding: 7px 30px 9px 50px;
+  }
+  
+  &__image-block img {
+    display: block;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
-.warranty__wrapper {
-  display: flex;
-  gap: 30px;
-  flex-direction: column;
-}
-
-.warranty__title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.warranty__copy {
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.warranty__copy:last-of-type {
-  margin-bottom: 0;
-}
-
-.warranty__image-block {
-  border: 1px solid #AAA;
-  border-radius: 20px;
-  height: 72vw;
-  overflow: hidden;
-  padding: 7px 30px 9px 50px;
-}
-
-.warranty__image-block img {
-  display: block;
-  height: 100%;
-  object-fit: contain;
-}
