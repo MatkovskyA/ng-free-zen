@@ -2,34 +2,34 @@
   padding: 30px 15px;
   color: #FFF;
   background: #484848;
-}
 
-.footer__wrapper {
-  display: grid;
-  gap: 30px;
-}
+  &__wrapper {
+    display: grid;
+    gap: 30px;
+  }
 
-.footer__columns {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(2, 1fr);
-}
+  &__columns {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-.footer__logo img {
-  width: 216px;
-  margin-bottom: 10px;
-}
+  &__logo img {
+    width: 216px;
+    margin-bottom: 10px;
+  }
 
-.footer__copy {
-  margin-bottom: 10px;
-  font-size: 12px;
-}
+  &__copy {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
 
-.footer__dev {
-  display: flex;
-  justify-content: center;
-}
+  &__dev {
+    display: flex;
+    justify-content: center;
+  }
 
-.footer__dev img {
-  width: 130px;
+  &__dev img {
+    width: 130px;
+  }
 }

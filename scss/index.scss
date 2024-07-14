@@ -1,8 +1,9 @@
-@import "./config/reset";
-@import "./config/vars";
-@import "./mixin/mixins";
-@import "./config/fonts";
-@import "./config/global";
+@import "config/reset";
+@import "config/vars";
+@import "config/theme-vars";
+@import "mixin/mixins";
+@import "config/fonts";
+@import "config/global";
 @import "widgets/header";
 @import "ui/burger";
 @import "ui/menu";
